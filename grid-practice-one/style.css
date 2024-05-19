@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    
+    /* padding: 5px; */
+    padding-block: 20px;
+    width:min(95%,70rem);
+    margin: 0 auto;
+}
+
+@media (min-width:600px){
+    .container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .col-span-2{
+        grid-column: span 2;
+    }
+    .row-span-2{
+        grid-row: span 2;
+    }
+    
+}
+
+
+.card {
+   
+    padding: 1rem;
+    border-radius: 6px;
+
+}
+
+.user {
+    display: flex;
+    gap: 1.2rem;
+    margin-block-end: 0.9rem;
+
+}
+
+.user img {
+    border-radius: 50%;
+    border: 2px solid #07dfb0;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 24px;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.sub-title{
+    font-size: 0.9rem;
+    margin-block-start: 6px;
+    opacity: 0.8;
+    font-weight: 100;
+    
+}
+.bg1{
+    background-color: #521b7b;
+    color:white;
+}
+.bg2{
+    background-color: #47556b;
+    color:white;
+}
+.bg3{
+    background-color:#eeeeee;
+    color:#333;
+}
+.bg4{
+    background-color: #c9c9c9;
+    color:#333;
+}
+.bg5{
+    background-color: #171f2a;
+    color:white;
+}
